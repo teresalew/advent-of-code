@@ -1,0 +1,32 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# editor/os vomit
+*.swp
+.DS_Store
+**/*.idea/**
+
+# vscode files
+./vscode/tags
+./vscode/launch.json
+
+# pyenv
+.python-version
+
+# IntelliJ Configs
+.idea
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
