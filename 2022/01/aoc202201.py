@@ -20,6 +20,7 @@ def parse(puzzle_input):
 
     return parsed_input
 
+
 def part1(data):
     """Solve part 1."""
     total_calories = []
@@ -30,6 +31,7 @@ def part1(data):
         total_calories.append(sum)
 
     return max(total_calories)
+
 
 def part2(data):
     """Solve part 2."""
@@ -57,5 +59,6 @@ def solve(puzzle_input):
     solution2 = part2(data)
 
     return solution1, solution2
+
 
 print(solve(INPUT))

@@ -17,6 +17,7 @@ OUTCOMES = {
     'draw': 3,
 }
 
+
 def determine_outcome(play):
     if play in ['AY', 'BZ', 'CX']:  # rock/paper, paper/scissor, scissor/rock
         return 'win'
@@ -25,6 +26,7 @@ def determine_outcome(play):
     else:
         return 'draw'
 
+
 def determine_outcome2(player2):
     if player2 == 'X':
         return 'lose'
@@ -32,6 +34,7 @@ def determine_outcome2(player2):
         return 'draw'
     else:
         return 'win'
+
 
 def determine_player2_points(player1, outcome):
     if player1 == 'A': #rock
@@ -56,12 +59,14 @@ def determine_player2_points(player1, outcome):
         else: #paper
             return 2
 
+
 def parse(puzzle_input):
     """Parse input."""
     with open(puzzle_input, mode="rt") as f:
         lines = f.read().split("\n")
     parsed_input = [line.split(" ") for line in lines]
     return parsed_input
+
 
 def part1(data):
     """Solve part 1."""
@@ -74,6 +79,7 @@ def part1(data):
         round_score = player2_points + OUTCOMES[outcome]
         total_score += round_score
     return total_score
+
 
 def part2(data):
     """Solve part 2."""
@@ -88,6 +94,7 @@ def part2(data):
         total_score += round_score
 
     return total_score
+
 
 def solve(puzzle_input):
     """Solve the puzzle for the given input."""
